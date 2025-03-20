@@ -21,8 +21,8 @@ StopButton.MouseButton1Click:Connect(closeScript)
 
 local StarterGui = game:GetService("StarterGui")
 StarterGui:SetCore("SendNotification", {
-    Title = "SUBSCRIBE TO PHILLYMADEMARE",
-    Text = "Credits To AnthonyIsHere"
+    Title = "Hi!",
+    Text = "Thanks for using the script!"
 })
 
 while true and not executed do
