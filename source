@@ -27,5 +27,5 @@ StarterGui:SetCore("SendNotification", {
 
 while true and not executed do
     wait(2)
-    loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Sigmagyatr/FE-fling-script-buttonless/refs/heads/main/source"))()
 end
